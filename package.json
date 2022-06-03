@@ -1,0 +1,32 @@
+{
+  "name": "backend-piggybank",
+  "version": "1.0.0",
+  "description": "Backend for piggybank",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moniquesenjaya/backend-piggybank.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "2am",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moniquesenjaya/backend-piggybank/issues"
+  },
+  "homepage": "https://github.com/moniquesenjaya/backend-piggybank#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  }
+}
