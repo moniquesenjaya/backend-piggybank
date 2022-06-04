@@ -1,19 +1,19 @@
 const mongoose = require("mongoose")
-const getTx = ()=>{
+const getTx = () => {
   const Tx = mongoose.model(
     "tx",
     mongoose.Schema(
       {
-        userid: String,
-          details: String,
-          category: String,
-          amount: Number,
-          type: String
+        email: String,
+        details: String,
+        category: String,
+        amount: Number,
+        type: String
       },
       { timestamps: true }
     )
   );
-    return Tx;
+  return Tx;
 };
 
 exports.getTx = getTx

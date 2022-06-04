@@ -5,11 +5,10 @@ module.exports = app => {
     const tx = require("../controllers/piggybanc.controller");
     var router = require("express").Router();
     router.post("/user", user.create)
-    router.put("/user/:id", user.setProfile)
-    router.get("/user/:id", user.getProfile)
-    router.post("/user/:id", user.login)
+    router.put("/user/update", user.setProfile)
+    router.get("/user/:email", user.getProfile)
+    router.post("/user/login", user.login)
     router.get("/tx", tx.getTx)
     router.post("/tx", tx.addTx)
-    router.get("/bal", tx.getBalance)
     return router;
   };

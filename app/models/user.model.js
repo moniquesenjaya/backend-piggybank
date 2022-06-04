@@ -1,13 +1,14 @@
 const mongoose = require("mongoose")
-const getUser = ()=>{
+const getUser = () => {
   const User = mongoose.model(
     "user",
     mongoose.Schema(
       {
         email: String,
-        password: String,
+        password: {type: String, required: true, maxLength: 255},
         name: String,
         dob: Date,
+        balance: Number,
         address: String,
         gender: String,
         occupation: String
@@ -15,7 +16,7 @@ const getUser = ()=>{
       { timestamps: true }
     )
   );
-    return User;
+  return User;
 };
 
 exports.getUser = getUser
