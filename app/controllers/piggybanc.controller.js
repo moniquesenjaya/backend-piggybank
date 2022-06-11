@@ -211,7 +211,7 @@ exports.addTx = async (req, res) => {
   }
   
   // Save tx in the database
-  tx
+  Tx
     .save(tx)
     .then(data => {
       res.send(data);
